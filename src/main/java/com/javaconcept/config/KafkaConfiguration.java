@@ -11,4 +11,9 @@ public class KafkaConfiguration {
     public NewTopic createTransTopic(){
         return new NewTopic("transaction_topic", 3, (short) 1);
     }
+
+    @Bean
+    public NewTopic createFraudTopic(){
+        return new NewTopic("fraud_topic", 3, (short) 1);
+    }
 }
