@@ -27,7 +27,7 @@ public class ProducerController {
     public String sendTransction() throws JsonProcessingException {
         for(int i=0; i<10; i++){
             String tran_id = "tran-"+System.currentTimeMillis()+" "+i;
-            Double amount = 10000 + new Random().nextDouble() * (14000-10000);
+            Double amount = 8000 + new Random().nextDouble() * (14000-10000);
             Transaction transaction = new Transaction(tran_id, "USER_"+i, amount,
                     LocalDateTime.now().toString());
 
@@ -36,9 +36,4 @@ public class ProducerController {
         }
         return "Successfully sent the transaction";
     }
-
-
-
-
-
 }
