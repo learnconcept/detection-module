@@ -14,3 +14,6 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic transact
 
 #To see fraud_topic messages
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic fraud_topic --from-beginning
+
+#Postman
+http://localhost:9191/api/transactions
